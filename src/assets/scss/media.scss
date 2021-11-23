@@ -1,0 +1,113 @@
+@keyframes bg{
+    0%{
+        background: crimson;
+    }
+    10%{
+        background: lime;
+    }
+    20%{
+        background: purple;
+    }
+    30%{
+        background: aqua;
+    }
+    40%{
+        background: #0D1A73;
+    }
+    50%{
+        background:#1FA2FF;
+    }
+    60%{
+       background: #F383F1;
+    }
+    70%{
+       background: #3CDB77;
+    }
+    80%{
+       background: #B936FF;
+    }
+    90%{
+       background: #FB1378;
+    }
+    100%{
+       background:#FDA75D;
+    }
+}
+@media(max-width: 1360px){
+    .register__now-block{
+        flex-direction: column;
+    }
+    .register__now-descr{
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+@media(max-width: 1140px){
+    .coming__soon-block{
+        grid-template-columns: 1fr;
+    }
+    .coming__block-neon{
+        margin-top: 30px;
+    }
+    .register__now-descr{
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 860px){
+    .header__btn{
+        display: flex;
+    }
+    .header__items{
+        position: fixed;
+        height: 100%;
+        right: -240px;
+        top: 100px;
+        width: 240px;
+        flex-direction: column;
+        padding-top: 50px;
+        justify-content: flex-start;
+        transition: 0.4s linear;
+        background: rgb(39, 38, 38);
+    }
+    .register__now-descr{
+        text-align: center;
+        font-size: 30px;
+    }
+    .header__items.active{
+        right: 0;
+    }
+    .header__list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__link{
+        margin: 15px 0;
+    }
+    .header__list-nth2{
+        flex-direction: row;
+        margin-bottom: 30px;
+        order: -1;
+    }
+}
+@media(max-width: 640px){
+    .header__title{
+        font-size: 50px;
+    }
+    .coming__soon-span{
+        font-size: 40px;
+    }
+}
+@media(max-width: 410px){
+    .header__buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .coming__soon-span{
+        font-size: 26px;
+    }
+    .header__more{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}

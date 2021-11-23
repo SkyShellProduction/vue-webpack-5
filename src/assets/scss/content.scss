@@ -1,0 +1,300 @@
+.main {
+    padding-top: 150px;
+    position: relative;
+    min-height: 100vh;
+}
+
+.trend__tv {
+    margin-bottom: 60px;
+}
+
+.trend__tv-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #FFF;
+    text-transform: capitalize;
+}
+/* .popular__actors-title{
+    display: flex;
+    align-items: center;
+} */
+
+.trend__tv-title::before {
+    display: block;
+    content: '';
+    width: 8px;
+    height: 35px;
+    background: linear-gradient(316.53deg, #26FFF2 13.2%, #326CFF 71.54%);
+    border-radius: 50px;
+    margin-right: 11px;
+}
+
+.trend__tv-title>span {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.trend__tv-slider .swiper-button-next {
+    color: #fff;
+}
+
+.trend__tv-slider .swiper-slide:hover {
+    box-shadow: 0 0 10px 1px #26FFF2;
+}
+
+.trend__tv-slider {
+    /* display: flex;
+    align-items: center; */
+    padding-right: 25px;
+}
+
+/* .trend__tv-slider .swiper-button-prev,
+.trend__tv-slider .swiper-button-next{
+    position: relative;
+} */
+.trend__movies {
+    margin-bottom: 100px;
+}
+.trend__tv-slider .swiper-slide{
+    border-radius: 20px;
+    overflow: hidden;
+}
+.trend__movies-slider .swiper-slide img{
+    height: 100%;
+}
+
+.popular__genres {
+    margin-bottom: 70px;
+}
+
+.trend__movies-link {
+    margin-top: 55px;
+    padding: 15px 33px;
+}
+
+.popular__genres-grid {
+    display: grid;
+    grid-gap: 27px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.popular__genres-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    height: 198px;
+    background: linear-gradient(109.31deg, #FD093F 2.4%, #F383F1 100%);
+}
+
+.popular__genres-item:nth-child(2n) {
+    background: linear-gradient(114.5deg, #0FFFDA 2.22%, #3CDB77 68.84%);
+}
+
+.popular__genres-item:nth-child(3n) {
+    background: linear-gradient(109.31deg, #B936FF 2.4%, #57DEDA 100%);
+}
+
+.popular__genres-item:nth-child(4n) {
+    background: linear-gradient(109.31deg, #FD093F 2.4%, #FB1378 2.41%, #FCCB1A 100%);
+}
+
+.popular__genres-item:nth-child(5n) {
+    background: linear-gradient(109.31deg, #FF6472 2.4%, #FDA75D 100%);
+}
+
+.popular__genres-item:nth-child(6n) {
+    background: linear-gradient(110.16deg, #13547A 2.37%, #80D0C7 96.77%);
+}
+
+.popular__genres-item:nth-child(7n) {
+    background: linear-gradient(109.93deg, #FFF77B 2.37%, #FFBF42 50%);
+}
+
+.popular__genres-item:nth-child(8n) {
+    background: linear-gradient(109.31deg, #1FA2FF 2.4%, #1FA2FF 2.41%, #1F535C 97.46%);
+}
+
+.popular__genres img {
+    width: 80px;
+}
+
+.popular__genres-span {
+    display: block;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 8px;
+}
+
+.popular__actors-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular__actors-item img {
+    max-width: 191px;
+}
+
+.popular__actors {
+    margin-bottom: 94px;
+}
+
+.popular__actors-span {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 22px;
+    color: #FFF;
+}
+
+/* .popular__actors-slider .swiper-slide:hover {
+    box-shadow: none;
+} */
+
+.coming__soon {
+    margin-bottom: 121px;
+}
+.movie__item{
+    cursor: pointer;
+}
+.coming__soon-block {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(87.02deg, #0D1A73 29.67%, #000000 70.52%);
+    box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.coming__block-neon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.coming__soon-img{
+    position: relative;
+}
+.coming__soon-img::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    background: crimson;
+    animation: bg 10s linear infinite;
+    animation-direction: alternate-reverse;
+    mix-blend-mode: multiply;
+}
+.coming__block-neon img {
+    max-width: 294px;
+}
+
+.coming__soon-span {
+    display: block;
+    font-weight: bold;
+    font-size: 64px;
+    text-transform: capitalize;
+    color: #FFF;
+    margin-top: 15px;
+}
+.some__item{
+    cursor: pointer;
+}
+.some__img{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.some__rating{
+    display: flex;
+    width: 35px;
+    height: 35px;
+    background: rgb(224, 224, 25);
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    position: absolute;
+    top: 16px;
+    font-weight: 600;
+    right: 10px;
+}
+.some__title{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.pagination__link{
+    display: flex;
+    padding: 10px 13px;
+    font-size: 18px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+.pagination__link.active{
+    background: #19c7fb;
+    color: #fff;
+}
+.main__block{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 200px));
+    grid-gap: 30px;
+    padding: 50px 0;
+    justify-content: center;
+}
+.form__main{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.form__main button{
+    background: transparent;
+    position: absolute;
+    right: 15px;
+    border: none;
+}
+.header__input{
+    display: block;
+    font-size: 18px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px 15px;
+}
+.header__input::placeholder{
+    color: crimson;
+    text-transform: capitalize;
+}
+.header__input:focus{
+    outline: none;
+    border: none;
+}
+.error{
+    color: #fff;
+    font-size: 26px;
+    text-transform: capitalize;
+    margin: 20px 0;
+}

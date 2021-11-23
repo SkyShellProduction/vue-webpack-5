@@ -1,0 +1,49 @@
+
+.anime{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    padding-top: 102px;
+    top: 0;
+    z-index: 20;
+    background: #111;
+}
+.circ{
+  width: 70px;
+  height: 70px;
+  position: relative;
+  border-radius: 50%;
+  background: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  &::before, &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+    display: block;
+    animation: circle 1.5s linear infinite;
+    background: linear-gradient(133deg, yellow, violet, blue);
+  }
+  &::after{
+     background: inherit;
+     width: 90%;
+     height: 90%;
+  }
+
+}
+@keyframes circle {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+}
+
